@@ -277,19 +277,4 @@ TaskFlow/
 ├── requirements.txt
 └── README.md
 ```
-
-## Current Limitations and Roadmap
-
-The backend reliability mechanisms are implemented, but the following work is still planned or requires verification:
-
-- [ ] Complete the React/TypeScript dashboard and connect job creation, filtering, and detail views.
-- [ ] Validate the full UI-to-API-to-worker execution path.
-- [ ] Inspect the skipped test and warning; re-run the full suite.
-- [ ] Add CI and improve structured logging, metrics, and health checks.
-- [ ] Run controlled worker-crash and Redis-outage recovery experiments.
-- [ ] Benchmark enqueue latency, throughput, and multi-worker behavior before making performance claims.
-- [ ] Review cancellation, external-handler idempotency, security, and deployment configuration.
-
----
-
 **Engineering scope:** TaskFlow demonstrates durable job dispatch, asynchronous execution, and recovery-oriented worker coordination. It is a learning and portfolio project; production readiness has not been established.
